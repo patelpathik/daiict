@@ -22,8 +22,9 @@
                             <!-- Contact Information -->
                             
                             <!-- Contact Form Area -->
-                            <div class="col-12 col-lg-3 "></div>
-                            <div class="col-12 col-lg-6 ">
+                            <!-- <div class="col-12 col-lg-3 "></div> -->
+                            <!-- <div class="col-12 col-lg-6 "> -->
+                                <div class="col-lg-12">
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
                                         <input type="text" class="form-control" id="name" placeholder="Name">
