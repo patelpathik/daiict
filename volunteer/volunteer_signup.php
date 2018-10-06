@@ -120,7 +120,7 @@
 											<div class="col-sm-3">
 												<input type="text" class="form-control" id="district" placeholder="City" required name="district">
 											</div>
-										   <div class="col-sm-3">
+										   	<div class="col-sm-3">
 										   		<input type="text" class="form-control" id="state" placeholder="State" required name="state">
 										   	</div>
 										</div>		

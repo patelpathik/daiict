@@ -2,7 +2,7 @@
     include "top.php";
 ?>
     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
+    <div class="breadcumb-area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
             <h2>Student Registration</h2>
         </div>
@@ -29,6 +29,8 @@
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
                                         <div class="row">
+                                            <div class="col-sm-6"><input type="text" class="form-control" name="name" placeholder="Name" required>
+                                            </div>
                                             <div class="col-sm-6">
                                                 <select  id="gender" class="form-control" style="height: 55px;" required>
                                                     <option selected disabled="true">Gender</option>>
@@ -36,6 +38,8 @@
                                                     <option value="Female">Female</option>
                                                 </select>
                                             </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-sm-6">
                                                 <select  id="age" class="form-control" style="height: 55px;" placeholder="Select Age" required>
                                                     <option selected disabled="true">Select Age</option>>
@@ -46,11 +50,24 @@
                                                     <option value="21+">21+</option>
                                                 </select>
                                             </div>
+                                            <div class="col-sm-6"><input type="tel" class="form-control" id="mob" placeholder="Mobie Number" required>
+                                            </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required>
+                                            <div class="col-12"> <textarea class="form-control" name="addr" placeholder="Address" required></textarea>  
+                                            </div>  
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required>
                                             </div>
-                                            <div class="col-sm-6"><input type="tel" class="form-control" id="mob" placeholder="Mobie Number" required>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control" name="area" id="area" placeholder="Area" required>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control" id="district" placeholder="City" required name="district">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <input type="text" class="form-control" id="state" placeholder="State" required name="state">
                                             </div>
                                         </div>
                                         <br><br>
