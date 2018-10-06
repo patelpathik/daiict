@@ -1,18 +1,20 @@
 <?php
 	include 'top.php';
 	$_SESSION['vo_id']=1;
-	if($_REQUEST['save']){
+	if(isset($_REQUEST['save'])){
 		$vo_id=$_SESSION['vo_id'];
 		$date=$_REQUEST['date'];
-		$start=$_REQUEST['start'];
+		$start=$_REQUEST['time'];
 		$venue=$_REQUEST['venue'];
 		$des=$_REQUEST['des'];
-		$q1="insert into adv_notice ('dt','start_time','venue','des','vo_id') values ('$date','$start','$venue','$des','$vo_id')";
+		$q1="insert into adv_notice (dt,start_time,venue,des,vo_id) values ('$date','$start','$venue','$des','$vo_id')";
 		$e1=$conn->query($q1);
 		if($e1){
 			echo "<script>alert('Your Advance Notice for described session is saved!');</script>";
 		}
 		else{
+			echo $q1;
+			print_r($e1);
 			echo "<script>alert('Error Occured!');</script>";
 		}
 	}
@@ -41,7 +43,7 @@
 										<div class="row">
 											<div class="col-sm-6"><input type="date" class="form-control" name="date" placeholder="Date" required>
 											</div>
-											<div class="col-sm-6"> <input type="text" class="form-control" name="time" placeholder="Start Time" required >
+											<div class="col-sm-6"> <input type="text" class="form-control" min=0 max=23 name="time" placeholder="Start Time" required >
 											</div>
 										</div>
 										<div class="row"> 

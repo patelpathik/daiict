@@ -20,7 +20,6 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="../style.css">
-    
 </head>
 
 <body>
