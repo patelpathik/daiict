@@ -28,7 +28,7 @@
 			$("#fp_c").fadeOut(1);
 		});
 		function do_login(){
-			$("#fp_c").fadeOut(1);
+			$("#fp_c").fadeOut(5);
 			$("#login_c").fadeIn(50);
 		}
 		function login_x(){
@@ -119,34 +119,6 @@
 	<!-- ##### Hero Area Start ##### -->
 	<section class="hero-area">
 		<div class="hero-slides owl-carousel">
-
-<<<<<<< HEAD
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
-                                    <li><a href="Login.php">Login</a></li>
-                                    <li><a href="stud_reg.php">Student Registration</a></li>
-
-=======
-			<!-- Single Hero Slide -->
-			<div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
-				<div class="container h-100">
-					<div class="row h-100 align-items-center">
-						<div class="col-12">
-							<div class="hero-slides-content">
-								<h4 data-animation="fadeInUp" data-delay="100ms">All the courses you need</h4>
-								<h2 data-animation="fadeInUp" data-delay="400ms">Wellcome to our <br>Online University</h2>
-								<a href="#" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
->>>>>>> 39236790256ecdb495528bcc01bc8a259f0aaa01
-
 			<!-- Single Hero Slide -->
 			<div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
 				<div class="container h-100">
