@@ -4,7 +4,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
-            <h2>Volunteer Signup</h2>
+            <h2>Student Registration</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -29,32 +29,33 @@
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
                                         <div class="row">
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="name" placeholder="Name">
+                                            <div class="col-sm-6">
+                                                <select  id="gender" class="form-control" style="height: 55px;" required>
+                                                    <option selected disabled="true">Gender</option>>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
                                             </div>
-                                            <div class="col-sm-6"> <input type="text" class="form-control" style="ma" id="cont" placeholder="Contact">
+                                            <div class="col-sm-6">
+                                                <select  id="age" class="form-control" style="height: 55px;" placeholder="Select Age" required>
+                                                    <option selected disabled="true">Select Age</option>>
+                                                    <option value="3-5">3-5</option>
+                                                    <option value="6-10">6-10</option>
+                                                    <option value="11-15">11-15</option>
+                                                    <option value="16-20">16-20</option>
+                                                    <option value="21+">21+</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6"> <input type="email" class="form-control" id="email" placeholder="Email">
-                                                <input type="text" class="form-control" id="city" placeholder="City">
-                                                <input type="text" class="form-control" id="state" placeholder="State">
+                                            <div class="col-sm-6"><input type="text" class="form-control" id="pin" placeholder="Pincode" required>
                                             </div>
-                                            <div class="col-sm-6"> <textarea class="form-control" id="add" placeholder="Address" rows="" cols=""></textarea>    
-                                            </div> 
-                                        </div>
-                                        <div class="row">                                  
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="pin" placeholder="Pincode">
-                                            </div>
-                                        </div>
-                                        <div class="row">           
-                                            <div class="col-sm-6"><input type="password" class="form-control" id="pass" placeholder="Password">
-                                            </div>
-                                            <div class="col-sm-6"> <input type="password" class="form-control" id="cpass" placeholder="Confirm Password">
+                                            <div class="col-sm-6"><input type="tel" class="form-control" id="mob" placeholder="Mobie Number">
                                             </div>
                                         </div>
                                         <br><br>
                                         
-                                        <center><button class="btn academy-btn mt-30" type="submit">Signup</button></center>
+                                        <center><button class="btn academy-btn mt-10" type="submit">Save</button></center>
                                     </form> 
                                 </div>
                                 </div>

@@ -71,6 +71,7 @@
                                     <li><a href="volunteer_signup.php">Volunteer Signup</a></li>
                                      <li><a href="change_pass.php">Change Password</a></li>
                                     <li><a href="../contact.php">Contact</a></li>
+                                    <li><a href="donation.php">Donation</a></li>
                                     <li><a href="../login.php">Login</a></li>
 
                                 </ul>

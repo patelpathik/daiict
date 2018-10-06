@@ -71,6 +71,8 @@
                                     <li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
                                     <li><a href="contact.php">Contact</a></li>
                                     <li><a href="Login.php">Login</a></li>
+                                    <li><a href="stud_reg.php">Student Registration</a></li>
+
 
                                 </ul>
                             </div>

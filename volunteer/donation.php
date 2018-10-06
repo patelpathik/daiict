@@ -4,7 +4,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
-            <h2>Volunteer Signup</h2>
+            <h2>Donation</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -35,7 +35,7 @@
 
                                         </select>
                                         <input type="text" class="form-control" id="amo" placeholder="Amount">
-                                        <input type="text" class="form-control" id="dis" placeholder="Discription">
+                                        <textarea class="form-control" id="dic" placeholder="Discription (Mention which resource and how much quantity)" rows="2" cols="2"></textarea>                                       
                                     
                                         <center><button class="btn academy-btn mt-30" type="submit">PAY</button></center>
                                         <center><button class="btn academy-btn mt-30" type="submit">Submit</button></center>
