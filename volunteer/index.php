@@ -1,6 +1,8 @@
 <?php
 	include("top.php");
 	$_SESSION['vo_id']="1";
+	$vo_id=$_SESSION['vo_id'];
+	echo "<input type='hidden' id='vo_id' value='$vo_id'>";
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,8 +11,9 @@
 	<script type="text/javascript" src="../js/jquery/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript">
 		function do1(){
+			var vo_id=document.getElementById("vo_id").value;
 			var fname="../get_data.php";
-			var temp1=fname+"?req=raised";
+			var temp1=fname+"?req=raised&vo_id="+vo_id;
 			// alert(temp1);
 			$.ajax({
 				method: "GET",
@@ -20,7 +23,7 @@
 					$("#raised").html(data);
 				}
 			});
-			var temp2=fname+"?req=adv";
+			var temp2=fname+"?req=adv&vo_id="+vo_id;
 			$.ajax({
 				method: "GET",
 				url: temp2,
