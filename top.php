@@ -73,7 +73,7 @@
 								<ul>
 									<li><a href="index.php">Home</a></li>
 									<li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
-									<li><a href="contact.php">Contact</a></li>
+									<li><a href="aboutus.php">About US</a></li>
 									<li><a href="login.php">Login</a></li>
 								</ul>
 							</div>
