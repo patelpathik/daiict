@@ -95,7 +95,6 @@
 									<li><a href="index.php">Home</a></li>
 									<li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
 									<li><a href="contact.php">Contact Us</a></li>
-									<li><a href="Login.php">Login</a></li>
 									<li><a href="#" onclick="do_login();">LOGIN</a></li>
 
 								</ul>
@@ -125,8 +124,8 @@
 					<div class="row h-100 align-items-center">
 						<div class="col-12">
 							<div class="hero-slides-content">
-								<h4 data-animation="fadeInUp" data-delay="100ms">All the courses you need</h4>
-								<h2 data-animation="fadeInUp" data-delay="400ms">Wellcome to our <br>Online University</h2>
+								<h4 data-animation="fadeInUp" data-delay="100ms">All the Help you need</h4>
+								<h2 data-animation="fadeInUp" data-delay="400ms">Make INDIA<br></h2>
 							</div>
 						</div>
 					</div>
@@ -191,8 +190,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- ##### Course Area Start ##### -->
-	
+
+
 
 	<!-- ##### Footer Area Start ##### -->
 	<footer class="footer-area">

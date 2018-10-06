@@ -1,4 +1,4 @@
-<?php
+    <?php
     include "top.php";
 ?>
     <!-- ##### Breadcumb Area Start ##### -->
@@ -29,7 +29,8 @@
                                         <input type="text" class="form-control" id="name" placeholder="Name">
                                         <input type="text" class="form-control" id="cont" placeholder="Contact">
                                         <input type="email" class="form-control" id="email" placeholder="Email">
-                                        <select class="form-control" id="ddl" >
+                                        <select class="form-control"  id="ddl" style="height: 55px;" >
+                                            <option selected disabled="true">Select Donation Type</option>>
                                             <option>Donate Money</option>
                                             <option>Donate Resources</option>
 
