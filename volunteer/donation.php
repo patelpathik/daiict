@@ -26,16 +26,16 @@
                             <div class="col-12 col-lg-6 ">
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                        <input type="text" class="form-control" id="cont" placeholder="Contact">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
-                                        <select class="form-control"  id="ddl" style="height: 55px;" >
+                                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                        <input type="text" class="form-control" maxlength="10" minlength="10" id="cont" placeholder="Contact" required>
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <select class="form-control"  id="ddl" style="height: 55px;" required >
                                             <option selected disabled="true">Select Donation Type</option>>
                                             <option>Donate Money</option>
                                             <option>Donate Resources</option>
 
                                         </select>
-                                        <input type="text" class="form-control" id="amo" placeholder="Amount">
+                                        <input type="text" class="form-control" id="amo" placeholder="Amount" required>
                                         <textarea class="form-control" id="dic" placeholder="Discription (Mention which resource and how much quantity)" rows="2" cols="2"></textarea>                                       
                                     
                                         <center><button class="btn academy-btn mt-30" type="submit">PAY</button></center>

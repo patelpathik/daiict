@@ -1,6 +1,8 @@
 <?php
     include "top.php";
 ?>
+
+
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
@@ -29,27 +31,27 @@
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
                                         <div class="row">
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="name" placeholder="Name">
+                                            <div class="col-sm-6"><input type="text" class="form-control" id="name" placeholder="Name" required>
                                             </div>
-                                            <div class="col-sm-6"> <input type="text" class="form-control" style="ma" id="cont" placeholder="Contact">
+                                            <div class="col-sm-6"> <input type="text" class="form-control" style="ma" id="cont" placeholder="Contact" maxlength="10" minlength="10" required >
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6"> <input type="email" class="form-control" id="email" placeholder="Email">
-                                                <input type="text" class="form-control" id="city" placeholder="City">
-                                                <input type="text" class="form-control" id="state" placeholder="State">
+                                            <div class="col-sm-6"> <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                                <input type="text" class="form-control" id="city" placeholder="City" required>
+                                                <input type="text" class="form-control" id="state" placeholder="State" required>
                                             </div>
-                                            <div class="col-sm-6"> <textarea class="form-control" id="add" placeholder="Address" rows="" cols=""></textarea>    
+                                            <div class="col-sm-6"> <textarea class="form-control" id="add" placeholder="Address" rows="" cols="" required></textarea>    
                                             </div> 
                                         </div>
                                         <div class="row">                                  
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="pin" placeholder="Pincode">
+                                            <div class="col-sm-6"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required>
                                             </div>
                                         </div>
                                         <div class="row">           
-                                            <div class="col-sm-6"><input type="password" class="form-control" id="pass" placeholder="Password">
+                                            <div class="col-sm-6"><input type="password" class="form-control" id="pass" placeholder="Password" required>
                                             </div>
-                                            <div class="col-sm-6"> <input type="password" class="form-control" id="cpass" placeholder="Confirm Password">
+                                            <div class="col-sm-6"> <input type="password" class="form-control" id="cpass" placeholder="Confirm Password" required>
                                             </div>
                                         </div>
                                         <br><br>

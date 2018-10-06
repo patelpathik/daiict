@@ -26,11 +26,11 @@
                             <div class="col-12 col-lg-6 ">
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
-                                        <input type="text" class="form-control" id="uname" placeholder="User Name">
+                                        <input type="text" class="form-control" id="uname" placeholder="User Name" required>
 
-                                        <input type="text" class="form-control" id="cpass" placeholder="Current Password">
-                                        <input type="text" class="form-control" id="npass" placeholder="New Password">
-                                         <input type="text" class="form-control" id="cnpass" placeholder="Confirm New Password">
+                                        <input type="text" class="form-control" id="cpass" placeholder="Current Password" required>
+                                        <input type="text" class="form-control" id="npass" placeholder="New Password" required>
+                                         <input type="text" class="form-control" id="cnpass" placeholder="Confirm New Password" required>
                                         
                                         <center><button class="btn academy-btn mt-30" type="submit">Change Password</button></center>
                                     </form> 

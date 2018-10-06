@@ -26,7 +26,7 @@
                             <div class="col-12 col-lg-6 ">
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
-                                        <input type="email" class="form-control" id="uname" placeholder="Email ID">
+                                        <input type="email" class="form-control" id="uname" placeholder="Email ID" required>
 
                                         
                                         

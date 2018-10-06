@@ -48,9 +48,9 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="pin" placeholder="Pincode" required>
+                                            <div class="col-sm-6"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required>
                                             </div>
-                                            <div class="col-sm-6"><input type="tel" class="form-control" id="mob" placeholder="Mobie Number">
+                                            <div class="col-sm-6"><input type="tel" class="form-control" id="mob" placeholder="Mobie Number" required>
                                             </div>
                                         </div>
                                         <br><br>
