@@ -39,29 +39,35 @@
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
                                         <div class="row">
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="name" placeholder="Name" required>
+                                            <div class="col-sm-4"><input type="text" class="form-control" id="name" placeholder="Name" required>
                                             </div>
-                                            <div class="col-sm-6"> <input type="text" class="form-control" style="ma" id="cont" placeholder="Contact" maxlength="10" minlength="10" required >
+                                            <div class="col-sm-4"> <input type="text" class="form-control" style="ma" id="cont" placeholder="Contact" maxlength="10" minlength="10" required >
                                             </div>
+                                            <div class="col-sm-4"> <input type="email" class="form-control" id="email" placeholder="Email" required>    </div> 
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6"> <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                                <input type="text" class="form-control" id="city" placeholder="City" required>
-                                                <input type="text" class="form-control" id="state" placeholder="State" required>
-                                            </div>
-                                            <div class="col-sm-6"> <textarea class="form-control" id="add" placeholder="Address" rows="" cols="" required></textarea>    
-                                            </div> 
-                                        </div>
-                                        <div class="row">                                  
-                                            <div class="col-sm-6"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required onchange="get_pdata(this.value);">
-                                            </div>
-                                        </div>
-                                        <div class="row">           
+                                         <div class="row"> 
+                                               
                                             <div class="col-sm-6"><input type="password" class="form-control" id="pass" placeholder="Password" required>
                                             </div>
                                             <div class="col-sm-6"> <input type="password" class="form-control" id="cpass" placeholder="Confirm Password" required>
                                             </div>
                                         </div>
+                                        <div class="col-12"> <textarea class="form-control" id="add" placeholder="Address" required></textarea>    
+                                            </div> 
+                                        <div class="row">
+                                            <div class="col-sm-4"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required onchange="get_pdata(this.value);">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="city" placeholder="City" required></div>
+                                               <div class="col-sm-4"> <input type="text" class="form-control" id="state" placeholder="State" required></div>
+                                            </div>
+
+                                            
+                                        </div>
+                                        <div class="row">                                  
+                                           
+                                        </div>
+                                       
                                         <br><br>
                                         
                                         <center><button class="btn academy-btn mt-30" type="submit">Signup</button></center>
