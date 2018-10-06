@@ -12,13 +12,15 @@
         $state=$_REQUEST['state'];
         $enrol=round(microtime(true));
 
-        echo $q1="insert into candidate (name,enrol_id,gender,contact,age,addr,area,district,state,pincode) values ('$name','$enrol','$gender','$contact','$age','$addr','$area','$district','$state','$pincode')";
+        $q1="insert into candidate (name,enrol_id,gender,contact,age,addr,area,district,state,pincode) values ('$name','$enrol','$gender','$contact','$age','$addr','$area','$district','$state','$pincode')";
 
         $e1=$conn->query($q1);
         if($e1){
             echo "<script>alert('Student Data is saved, Generated Student id is: $enrol');</script>";
         }
         else{
+            echo $q1;
+            print_r($e1);
             echo "<script>alert('Error Occured!');</script>";
         }
     }
