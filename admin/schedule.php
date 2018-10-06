@@ -23,7 +23,7 @@
                             <!-- Contact Form Area -->
                             <div class="col-12 col-lg-3 "></div>
                                 <div class="col-12">
-                                    <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
+                                    <!-- <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
                                         <form action="#" method="post">
                                             <div class="row">
                                                 <div class="col-12">
@@ -34,10 +34,9 @@
                                                 <button class="btn academy-btn mt-30 btn-round" type="submit" name="sub">Search</button>
                                             </center>
                                         </form> 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
-                            <br><br><br>
                             <div class="col-12 col-lg-3 "></div>
                                 <div class="">
                                     <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
@@ -54,9 +53,8 @@
                                                 </tr>
                                             </thead>
                                             <?php
-                                            if (isset($_POST['sub'])) {
-                                                $search = $_POST['search'];
-                                                $q1="select * from adv_notice where pincode = '$search'";
+                                                // $q1="select * from adv_notice";
+                                                $q1="select * from adv_notice a, volunteer v where a.vo_id=v.vo_id";
                                                 $e1=$conn->query($q1);
                                                 if($e1->num_rows == 0){
                                             ?>
@@ -73,10 +71,9 @@
                                                   <td style="vertical-align: baseline;"><?php echo $data->start_time; ?></td>
                                                   <td style="vertical-align: baseline;"><?php echo $data->venue; ?></td>
                                                   <td style="vertical-align: baseline;"><?php echo $data->des; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php //echo $data-> ?></td>
+                                                  <td style="vertical-align: baseline;"><?php echo $data->name; ?></td>
                                                 </tr>
                                                 <?php
-                                                    }
                                                     }
                                                 ?>
                                         </table> 

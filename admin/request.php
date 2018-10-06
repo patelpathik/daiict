@@ -52,9 +52,8 @@
                                                 </tr>
                                             </thead>
                                             <?php
-                                            if (isset($_POST['sub'])) {
-                                                $search = $_POST['search'];
-                                                $q1="select * from request where pincode = '$search'";
+                                                //$q1="select * from request";
+                                                $q1="select * from request a, volunteer v where a.vo_id=v.vo_id";
                                                 $e1=$conn->query($q1);
                                                 if($e1->num_rows == 0){
                                             ?>
@@ -72,7 +71,6 @@
                                                   <td style="vertical-align: baseline;"><?php //echo $data->vo_id ?></td>
                                                 </tr>
                                                 <?php
-                                                    }
                                                     }
                                                 ?>
                                         </table> 
