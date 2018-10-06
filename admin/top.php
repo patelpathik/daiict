@@ -67,16 +67,9 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="#">Manage Officer</a>
-                                        <ul class="dropdown">
-                                            <li><a href="add_officer.php">Add Officer</a></li>
-                                            <li><a href="officer_data.php">Officer Data</a></li>
-                                        </ul>
+                                    <li><a href="volunteer_data.php">Volunteer Data</a>
                                     </li>
-                                    <li><a href="#">Manage Volunteer</a>
-                                        <ul class="dropdown">
-                                            <li><a href="volunteer_data.php">Volunteer Data</a></li>
-                                        </ul>
+                                    <li><a href="stud_data.php">Student Data</a>
                                     </li>
                                 </ul>
                             </div>
