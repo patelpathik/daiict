@@ -1,7 +1,15 @@
 <?php
     include "top.php";
 ?>
-
+    <script type="text/javascript">
+        function get_pdata(x){
+            var temp="get_pdata.php?pc="+x;
+            $.ajax({
+                method: GET,
+                url: temp;
+            });
+        }
+    </script>
 
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
@@ -45,7 +53,7 @@
                                             </div> 
                                         </div>
                                         <div class="row">                                  
-                                            <div class="col-sm-6"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required>
+                                            <div class="col-sm-6"><input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required onchange="get_pdata(this.value);">
                                             </div>
                                         </div>
                                         <div class="row">           
