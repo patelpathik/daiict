@@ -24,18 +24,20 @@
                                     <form action="#" method="post">
                                         <div class="row">
                                             <div class="col-sm-6"><input type="date" class="form-control" name="date" placeholder="Date" required>
-                                            <input type="text" minlength="6" maxlength="6" class="form-control" id="pin" placeholder="Pincode" required>
-                                            <select  id="age" class="form-control" style="height: 55px;" placeholder="Select Age" required>
+                                        	</div>
+                                            <div class="col-sm-6">
+                                                <select  id="age" class="form-control" style="height: 55px;" placeholder="Select Age" required>
                                                 <option selected disabled="true">Select Age</option>>
                                                 <option value="3-5">3-5</option>
                                                 <option value="6-10">6-10</option>
                                                 <option value="11-15">11-15</option>
                                                 <option value="16-20">16-20</option>
                                                 <option value="21+">21+</option>
-                                            </select>
-                                        	</div>
-                                            <div class="col-sm-6"> <textarea class="form-control" name="dis" placeholder="Description" required></textarea>    
+                                                </select>     
                                             </div>
+                                        </div>
+                                        <div>
+                                            <textarea class="form-control" name="dis" placeholder="Description" required></textarea>
                                         </div>
                                         <br><br>
                                         
