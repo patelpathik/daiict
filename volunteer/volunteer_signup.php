@@ -96,7 +96,7 @@
 										<div class="row">
 											<div class="col-sm-4"><input type="text" class="form-control" name="name" placeholder="Name" required>
 											</div>
-											<div class="col-sm-4"> <input type="text" class="form-control" style="ma" name="contact" placeholder="Contact" maxlength="10" minlength="10" required >
+											<div class="col-sm-4"> <input type="text" class="form-control" name="contact" placeholder="Contact" maxlength="10" minlength="10" required >
 											</div>
 											<div class="col-sm-4"> <input type="email" class="form-control" name="email" placeholder="Email" required>    </div> 
 										</div>
