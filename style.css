@@ -1117,7 +1117,7 @@ img {
       width: 100%;
       background-color: #eef3f6;
       font-size: 12px;
-      font-style: italic;
+      /*font-style: italic;*/
       margin-bottom: 15px;
       border: none;
       border-radius: 0;
