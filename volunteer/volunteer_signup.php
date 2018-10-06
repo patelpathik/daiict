@@ -33,7 +33,8 @@
 		<script type="text/javascript" src="../js/jquery/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript">
 			function get_pdata(x){
-				var temp="get_pdata.php?req=area&pc="+x;
+				var pname="../get_pdata.php";
+				var temp=pname+"?req=area&pc="+x;
 				// alert(temp1);
 				$.ajax({
 					method: "GET",
@@ -45,7 +46,7 @@
 						// $("#district").val(data);
 					}
 				});
-				var temp1="get_pdata.php?req=district&pc="+x;
+				var temp1=pname+"?req=district&pc="+x;
 				$.ajax({
 					method: "GET",
 					url: temp1,
@@ -53,7 +54,7 @@
 						document.getElementById("district").value=data;
 					}
 				});
-				var temp2="get_pdata.php?req=state&pc="+x;
+				var temp2=pname+"?req=state&pc="+x;
 				$.ajax({
 					method: "GET",
 					url: temp2,
@@ -123,7 +124,7 @@
 										   	<div class="col-sm-3">
 										   		<input type="text" class="form-control" id="state" placeholder="State" required name="state">
 										   	</div>
-										</div>		
+										</div>	
 									</div>
 									<div class="row">
 										</div>
