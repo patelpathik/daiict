@@ -29,7 +29,7 @@
                                         <input type="text" class="form-control" id="name" placeholder="Name">
                                         <input type="text" class="form-control" id="cont" placeholder="Contact">
                                         <input type="email" class="form-control" id="email" placeholder="Email">
-                                        <select>
+                                        <select class="form-control" id="ddl" >
                                             <option>Donate Money</option>
                                             <option>Donate Resources</option>
 
@@ -38,6 +38,8 @@
                                         <input type="text" class="form-control" id="dis" placeholder="Discription">
                                     
                                         <center><button class="btn academy-btn mt-30" type="submit">PAY</button></center>
+                                        <center><button class="btn academy-btn mt-30" type="submit">Submit</button></center>
+
                                     </form> 
                                 </div>
                                 </div>

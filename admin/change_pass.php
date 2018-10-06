@@ -4,7 +4,7 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
-            <h2>Volunteer Signup</h2>
+            <h2>Change Password</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -26,18 +26,13 @@
                             <div class="col-12 col-lg-6 ">
                                 <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
                                     <form action="#" method="post">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                        <input type="text" class="form-control" id="cont" placeholder="Contact">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
-                                        <textarea class="form-control" id="add" placeholder="Address" rows="3" cols="3"></textarea>                                       
-                                        <input type="text" class="form-control" id="pin" placeholder="Pincode">
-                                         <input type="text" class="form-control" id="city" placeholder="City">
-                                        <input type="text" class="form-control" id="state" placeholder="State">            
-                                        <input type="password" class="form-control" id="pass" placeholder="Password">
-                                        <input type="password" class="form-control" id="cpass" placeholder="Confirm Password">
-                                        <br><br>
+                                        <input type="text" class="form-control" id="uname" placeholder="User Name">
+
+                                        <input type="text" class="form-control" id="cpass" placeholder="Current Password">
+                                        <input type="text" class="form-control" id="npass" placeholder="New Password">
+                                         <input type="text" class="form-control" id="cnpass" placeholder="Confirm New Password">
                                         
-                                        <center><button class="btn academy-btn mt-30" type="submit">Signup</button></center>
+                                        <center><button class="btn academy-btn mt-30" type="submit">Change Password</button></center>
                                     </form> 
                                 </div>
                                 </div>
