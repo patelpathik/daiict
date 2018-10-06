@@ -1,3 +1,6 @@
+<?php
+    include 'conn.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,6 +73,8 @@
                                     <li><a href="volunteer_data.php">Volunteer Data</a>
                                     </li>
                                     <li><a href="stud_data.php">Student Data</a>
+                                    </li>
+                                    <li><a href="schedule.php">Schedule</a>
                                     </li>
                                 </ul>
                             </div>

@@ -3,7 +3,7 @@
 ?>
 <div class="breadcumb-area bg-img" style="background-image: url(../img/bg-img/breadcumb.jpg);">
         <div class="bradcumbContent">
-            <h2>Volunteers Data</h2>
+            <h2>Class Schedule</h2>
         </div>
     </div>
     <!-- ##### Breadcumb Area End ##### -->
@@ -42,7 +42,7 @@
                                 <div class="">
                                     <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
                                         <table class="table table-borderless" align="center" border="1" cellspacing="1" cellpadding="1" id="stud_tbody" style="font-size: 15px;">
-                                            <thead><tr><th colspan="9"><h4 style="color: green"><center>Volunteer Data</h4></th></tr></thead>
+                                            <thead><tr><th colspan="9"><h4 style="color: green"><center>Time Table</h4></th></tr></thead>
                                             <thead class="thead-light">
                                                 <tr>
                                                   <th>Id</th>
