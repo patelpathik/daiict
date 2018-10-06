@@ -95,6 +95,7 @@
 									<li><a href="index.php">Home</a></li>
 									<li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
 									<li><a href="contact.php">Contact Us</a></li>
+									<li><a href="con_class.php">Conduct Class</a></li>
 									<li><a href="#" onclick="do_login();">LOGIN</a></li>
 
 								</ul>
