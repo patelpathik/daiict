@@ -23,7 +23,7 @@
                             <!-- Contact Form Area -->
                             <div class="col-12 col-lg-3 "></div>
                                 <div class="col-12">
-                                    <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
+                                    <!-- <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
                                         <form action="#" method="post">
                                             <div class="row">
                                                 <div class="col-12">
@@ -34,10 +34,9 @@
                                                 <button class="btn academy-btn mt-30 btn-round" type="submit" name="sub">Search</button>
                                             </center>
                                         </form> 
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
-                            <br><br><br>
                             <div class="col-12 col-lg-3 "></div>
                                 <div class="">
                                     <div class="contact-form-area wow fadeInUp" data-wow-delay="600ms">
@@ -46,20 +45,16 @@
                                             <thead class="thead-light">
                                                 <tr>
                                                   <th>Id</th>
-                                                  <th>Volunteer Name</th>
-                                                  <th>Email</th>
-                                                  <th>Conatct NO</th>
-                                                  <th>Address</th>
-                                                  <th>Area</th>
-                                                  <th>District</th>
-                                                  <th>State</th>
-                                                  <th>Pincode</th>
+                                                  <th>Date</th>
+                                                  <th>Time</th>
+                                                  <th>Venue</th>
+                                                  <th>Description</th>
+                                                  <th>Volunteer</th>
                                                 </tr>
                                             </thead>
                                             <?php
-                                            if (isset($_POST['sub'])) {
-                                                $search = $_POST['search'];
-                                                $q1="select * from volunteer where pincode = '$search'";
+                                                // $q1="select * from adv_notice";
+                                                $q1="select * from adv_notice a, volunteer v where a.vo_id=v.vo_id";
                                                 $e1=$conn->query($q1);
                                                 if($e1->num_rows == 0){
                                             ?>
@@ -72,17 +67,13 @@
                                                 ?>
                                                 <tr>
                                                   <td style="vertical-align: baseline;"><?php echo $i; ?></td>
+                                                  <td style="vertical-align: baseline;"><?php echo $data->dt; ?></td>
+                                                  <td style="vertical-align: baseline;"><?php echo $data->start_time; ?></td>
+                                                  <td style="vertical-align: baseline;"><?php echo $data->venue; ?></td>
+                                                  <td style="vertical-align: baseline;"><?php echo $data->des; ?></td>
                                                   <td style="vertical-align: baseline;"><?php echo $data->name; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->email; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->contact; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->addr; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->area; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->district; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->state; ?></td>
-                                                  <td style="vertical-align: baseline;"><?php echo $data->pincode; ?></td>
                                                 </tr>
                                                 <?php
-                                                    }
                                                     }
                                                 ?>
                                         </table> 

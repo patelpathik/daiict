@@ -76,6 +76,8 @@
                                     </li>
                                     <li><a href="schedule.php">Schedule</a>
                                     </li>
+                                    <li><a href="request.php">Requests</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

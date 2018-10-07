@@ -57,8 +57,9 @@
 											</thead>
 											<?php
                                             if (isset($_POST['sub'])) {
-                                                $search = $_POST['search'];
-                                                $q1="select * from candidate where pincode = '$search'";
+                                                $s = $_POST['search'];
+                                                //$q1="select * from candidate where pincode = '$search'";
+                                                $q1 = "select * from volunteer where name='$s' or enrol_id='$s' or gender='$s' or contact='$s' or age='$s' or addr='$s' or area='$s' or district='$s' or state='$s' or pincode='$s'";
                                                 $e1=$conn->query($q1);
                                                 if($e1->num_rows == 0){
                                             ?>
