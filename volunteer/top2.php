@@ -1,9 +1,6 @@
 <?php
     session_start();
     include("../conn.php");
-    if(!isset($_SESSION['uid'])){
-        header("location:../index.php");
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +24,9 @@
 
 <body>
     <!-- ##### Preloader ##### -->
-    <div id="preloader">
-        <i class="circle-preloader"></i>
-    </div>
+    <!-- <div id="preloader"> -->
+        <!-- <i class="circle-preloader"></i> -->
+    <!-- </div> -->
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
@@ -72,9 +69,9 @@
 
                             <!-- Nav Start -->
                             <div class="classynav">
-                                <?php
-                                    // include("menu.php");
-                                ?>
+                                <ul>
+                                <li><a href="index.php">Home</a></li>
+                            </ul>
                             </div>
                             <!-- Nav End -->
                         </div>

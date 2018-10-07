@@ -3,11 +3,11 @@
 	$_SESSION['vo_id']=1;
 	if(isset($_REQUEST['save'])){
 		$vo_id=$_SESSION['vo_id'];
-		$date=$_REQUEST['date'];
+		$dt=$_REQUEST['date'];
 		$start=$_REQUEST['time'];
 		$venue=$_REQUEST['venue'];
 		$des=$_REQUEST['des'];
-		$q1="insert into adv_notice (dt,start_time,venue,des,vo_id) values ('$date','$start','$venue','$des','$vo_id')";
+		$q1="insert into adv_notice (dt,start_time,venue,des,vo_id) values ('$dt','$start','$venue','$des','$vo_id')";
 		$e1=$conn->query($q1);
 		if($e1){
 			echo "<script>alert('Your Advance Notice for described session is saved!');</script>";
@@ -41,9 +41,11 @@
 								<div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
 									<form action="#" method="post">
 										<div class="row">
-											<div class="col-sm-6"><input type="date" class="form-control" name="date" placeholder="Date" required>
+											<div class="col-sm-6">
+												<input type="date" class="form-control" name="date" placeholder="Date" required>
 											</div>
-											<div class="col-sm-6"> <input type="text" class="form-control" min=0 max=23 name="time" placeholder="Start Time" required >
+											<div class="col-sm-6">
+												<input type="text" class="form-control" min=0 max=23 name="time" placeholder="Start Time" required >
 											</div>
 										</div>
 										<div class="row"> 
@@ -57,8 +59,6 @@
 										
 										<center><button class="btn academy-btn mt-30" name="save" type="submit">Submit</button></center>
 									</form> 
-								</div>
-								</div>
 								</div>
 							</div>
 						</div>

@@ -1,3 +1,22 @@
+<?php
+	session_start();
+	if(isset($_REQUEST['login_btn'])){
+		$email=$_REQUEST['email'];
+		$pass=$_REQUEST['pass'];
+		include("conn.php");
+		echo $q1="select * from volunteer where email='$email' && pass='$pass'";
+		$e1=$conn->query($q1);
+		if($e1->num_rows > 0){
+			$data=$e1->fetch_object();
+			$_SESSION['uid']=$data->vo_id;
+			$_SESSION['uname']=$data->name;
+			echo "<script>alert('Login Successful!'); window.top.location='volunteer/index.php';</script>";
+		}
+		else{
+			echo "<script>alert('Incorrect Email ID/Password!'); window.top.location='index.php';</script>";
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,10 +113,8 @@
 								<ul>
 									<li><a href="index.php">Home</a></li>
 									<li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
-									<li><a href="contact.php">Contact Us</a></li>
-									<li><a href="con_class.php">Conduct Class</a></li>
+									<li><a href="aboutus.php">About Us</a></li>
 									<li><a href="#" onclick="do_login();">LOGIN</a></li>
-
 								</ul>
 							</div>
 							<!-- Nav End -->
@@ -147,10 +164,10 @@
 					<div class="col-12 col-lg-6 ">
 						<div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
 							<form action="#" method="post">
-								<input type="email" class="form-control" id="uname" placeholder="Email Id">
-								<input type="password" class="form-control" id="pass" placeholder="Password">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Email Id">
+								<input type="password" class="form-control" name="pass" id="pass" placeholder="Password">
 								<center>
-									<button class="btn academy-btn mt-30" type="submit">Login</button>
+									<button class="btn academy-btn mt-30" type="submit" name="login_btn">Login</button>
 									<br><br>
 									<!-- <a class="nav-link active" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Forgot Password?</a> -->
 									<a onclick="do_fp();" class="nav-link active cur1">Forgot Password?</a>

@@ -1,5 +1,5 @@
 <?php
-	include("top.php");
+	include("top2.php");
 	// print_r($_SESSION);
 	if(isset($_REQUEST['signup'])){
 		$name=$_REQUEST['name'];

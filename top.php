@@ -1,6 +1,9 @@
 <?php
 	session_start();
 	include("conn.php");
+	if(!isset($_SESSION['uid'])){
+		header("location:index.php");
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,12 +73,22 @@
 
 							<!-- Nav Start -->
 							<div class="classynav">
-								<ul>
-									<li><a href="index.php">Home</a></li>
-									<li><a href="volunteer/volunteer_signup.php">Volunteer Signup</a></li>
+								<!-- <ul>
+									<li><a href="volunteer/index.php">Home</a></li>
 									<li><a href="contact.php">Contact</a></li>
-									<li><a href="login.php">Login</a></li>
-								</ul>
+									<?php
+										/*if(isset($_SESSION['uid'])){
+											echo "<li><a href='logout.php'><i>LOGOUT<i></a>&nbsp;$_SESSION['uname']</li>";
+										}
+										else{
+											echo "<li><a href='index.php'>Login</a></li>";
+											echo "<li><a href='volunteer/volunteer_signup.php'>Volunteer Signup</a></li>";
+										}*/
+									?>
+								</ul> -->
+								<?php
+									include("menu.php");
+								?>
 							</div>
 							<!-- Nav End -->
 						</div>
@@ -83,7 +96,7 @@
 						<!-- Calling Info -->
 						<div class="calling-info">
 							<div class="call-center">
-								<a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+91) 97897 89780</span></a>
+								<a href="tel:+911234567890"><i class="icon-telephone-2"></i> <span>(+91) 1234567890</span></a>
 							</div>
 						</div>
 					</nav>
