@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	// $_SESSION['uid']="1";
 	if(isset($_REQUEST['login_btn'])){
 		$email=$_REQUEST['email'];
 		$pass=$_REQUEST['pass'];
